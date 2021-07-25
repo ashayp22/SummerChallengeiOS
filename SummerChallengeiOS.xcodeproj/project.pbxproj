@@ -15,6 +15,8 @@
 		1C41AD7D26ACBFD100BDF0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C41AD7B26ACBFD100BDF0D3 /* LaunchScreen.storyboard */; };
 		1C41AD8826ACBFD100BDF0D3 /* SummerChallengeiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41AD8726ACBFD100BDF0D3 /* SummerChallengeiOSTests.swift */; };
 		1C41AD9326ACBFD100BDF0D3 /* SummerChallengeiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41AD9226ACBFD100BDF0D3 /* SummerChallengeiOSUITests.swift */; };
+		1C8CB90426AD0E1F00DE5CBC /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CB90226AD0E1F00DE5CBC /* MentorTableViewCell.swift */; };
+		1C8CB90526AD0E1F00DE5CBC /* MentorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8CB90326AD0E1F00DE5CBC /* MentorTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1C41AD8E26ACBFD100BDF0D3 /* SummerChallengeiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SummerChallengeiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C41AD9226ACBFD100BDF0D3 /* SummerChallengeiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerChallengeiOSUITests.swift; sourceTree = "<group>"; };
 		1C41AD9426ACBFD100BDF0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8CB90226AD0E1F00DE5CBC /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
+		1C8CB90326AD0E1F00DE5CBC /* MentorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MentorTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				1C41AD7026ACBFCA00BDF0D3 /* AppDelegate.swift */,
 				1C41AD7226ACBFCA00BDF0D3 /* SceneDelegate.swift */,
 				1C41AD7426ACBFCA00BDF0D3 /* ViewController.swift */,
-				1C41AD7626ACBFCA00BDF0D3 /* Main.storyboard */,
 				1C41AD7926ACBFD100BDF0D3 /* Assets.xcassets */,
 				1C41AD7B26ACBFD100BDF0D3 /* LaunchScreen.storyboard */,
 				1C41AD7E26ACBFD100BDF0D3 /* Info.plist */,
+				1C41AD7626ACBFCA00BDF0D3 /* Main.storyboard */,
+				1C8CB90226AD0E1F00DE5CBC /* MentorTableViewCell.swift */,
+				1C8CB90326AD0E1F00DE5CBC /* MentorTableViewCell.xib */,
 			);
 			path = SummerChallengeiOS;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8CB90526AD0E1F00DE5CBC /* MentorTableViewCell.xib in Resources */,
 				1C41AD7D26ACBFD100BDF0D3 /* LaunchScreen.storyboard in Resources */,
 				1C41AD7A26ACBFD100BDF0D3 /* Assets.xcassets in Resources */,
 				1C41AD7826ACBFCA00BDF0D3 /* Main.storyboard in Resources */,
@@ -260,6 +267,7 @@
 			files = (
 				1C41AD7526ACBFCA00BDF0D3 /* ViewController.swift in Sources */,
 				1C41AD7126ACBFCA00BDF0D3 /* AppDelegate.swift in Sources */,
+				1C8CB90426AD0E1F00DE5CBC /* MentorTableViewCell.swift in Sources */,
 				1C41AD7326ACBFCA00BDF0D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
