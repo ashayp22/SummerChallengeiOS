@@ -4,12 +4,5 @@
 ### Features
 
 - GET mentor data from HackIllinois API
-- Display mentor information
+- Display mentor information with modals
 - Order mentors based on profile image
-
-TODO:
-
-- Screenshots
-- Better background?
-- Works on all devices
-- Other cool iOS features?
