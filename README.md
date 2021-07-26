@@ -9,7 +9,6 @@
 
 TODO:
 
-- Scroll to top button
 - Screenshots
 - Better background?
 - Works on all devices
