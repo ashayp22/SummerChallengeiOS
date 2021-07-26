@@ -3,14 +3,6 @@
 
 ### Features
 
-- GET mentor data from HackIllinois API
-- Display mentor information
-- Order mentors based on profile image
-
-TODO:
-
-- Scroll to top button
-- Screenshots
-- Better background?
-- Works on all devices
-- Other cool iOS features?
+- Displays mentor information with a Table View and Modal
+- Orders mentors based on profile image
+- Scroll to Top button
