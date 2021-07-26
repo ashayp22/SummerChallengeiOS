@@ -17,6 +17,7 @@
 		1C41AD9326ACBFD100BDF0D3 /* SummerChallengeiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C41AD9226ACBFD100BDF0D3 /* SummerChallengeiOSUITests.swift */; };
 		1C8CB90426AD0E1F00DE5CBC /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CB90226AD0E1F00DE5CBC /* MentorTableViewCell.swift */; };
 		1C8CB90526AD0E1F00DE5CBC /* MentorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8CB90326AD0E1F00DE5CBC /* MentorTableViewCell.xib */; };
+		1C8CB91226AE65CB00DE5CBC /* MentorModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8CB91126AE65CB00DE5CBC /* MentorModalController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1C41AD9426ACBFD100BDF0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C8CB90226AD0E1F00DE5CBC /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
 		1C8CB90326AD0E1F00DE5CBC /* MentorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MentorTableViewCell.xib; sourceTree = "<group>"; };
+		1C8CB91126AE65CB00DE5CBC /* MentorModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorModalController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				1C41AD7626ACBFCA00BDF0D3 /* Main.storyboard */,
 				1C8CB90226AD0E1F00DE5CBC /* MentorTableViewCell.swift */,
 				1C8CB90326AD0E1F00DE5CBC /* MentorTableViewCell.xib */,
+				1C8CB91126AE65CB00DE5CBC /* MentorModalController.swift */,
 			);
 			path = SummerChallengeiOS;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				1C41AD7526ACBFCA00BDF0D3 /* ViewController.swift in Sources */,
 				1C41AD7126ACBFCA00BDF0D3 /* AppDelegate.swift in Sources */,
 				1C8CB90426AD0E1F00DE5CBC /* MentorTableViewCell.swift in Sources */,
+				1C8CB91226AE65CB00DE5CBC /* MentorModalController.swift in Sources */,
 				1C41AD7326ACBFCA00BDF0D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

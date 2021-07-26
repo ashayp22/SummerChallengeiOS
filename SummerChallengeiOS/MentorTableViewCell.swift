@@ -11,7 +11,6 @@ class MentorTableViewCell: UITableViewCell {
     
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var bioLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
