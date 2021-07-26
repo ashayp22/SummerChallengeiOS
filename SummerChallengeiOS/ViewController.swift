@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let blue = CGFloat(0 / 255)
         let alpha = CGFloat(100 / 100)
         
-        backToTopButton.layer.cornerRadius = 15
+        backToTopButton.layer.cornerRadius = 10
         backToTopButton.layer.borderWidth = 1
         backToTopButton.layer.borderColor = CGColor.init(red: red, green: green, blue: blue, alpha: alpha)
         
@@ -70,6 +70,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let mentorData = json["data"] as? [[String: Any]] ?? []
 
                 self.mentorArray = mentorData
+                
+                /*This next piece organizes the mentors such that those with the default image are at the end.
+                 */
+                
+                let defaultURL = "https://hackillinois-upload.s3.amazonaws.com/photos/mentors/default.png" //hard-coded value
+                
+                var end = self.mentorArray.count
+                var i = 0
+                
+                while (i < end) {
+                    let profile = self.mentorArray[i]["profile"] as? String ?? ""
+                    
+                    if(profile == defaultURL) {
+                        self.mentorArray.append(self.mentorArray.remove(at: i))
+                        i -= 1
+                        end -= 1
+                    }
+                
+                    i += 1
+                }
 
                 myGroup.leave()
 
@@ -127,6 +147,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //Maintains aspect ratio while have the image fill the Image View
         cell.profileImage.contentMode = .scaleAspectFill
         
+        //Selected cell color
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.init(red: 48/255, green: 52/255, blue: 128/255, alpha: 0.15)
+        cell.selectedBackgroundView = bgColorView
+        
         return cell
         
     }
@@ -143,9 +168,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                                    animated: true)
     }
     
+    //When a table view cell is selected
     func tableView(_ tableView: UITableView,
                        didSelectRowAt indexPath: IndexPath) {
+        //record the cell that is selected
         self.selectedMentorIndex = indexPath.row
+        
+        //show the mentor modal
         self.performSegue(withIdentifier: "ShowMentor", sender: self)
     }
     
@@ -156,10 +185,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let destinationVC = segue.destination as? MentorModalController
             
             if(self.selectedMentorIndex != -1) {
+                
+                //Getting the selected mentor infor
                 let fullName = (mentorArray[self.selectedMentorIndex]["firstName"] as? String ?? "") + " " + (mentorArray[selectedMentorIndex]["lastName"] as? String ?? "")
                 let profile = mentorArray[self.selectedMentorIndex]["profile"] as? String ?? ""
                 let bio = mentorArray[self.selectedMentorIndex]["description"] as? String ?? "No description"
             
+                //Sending over to modal
                 destinationVC?.mentorImageURL = profile
                 destinationVC?.mentorBio = bio
                 destinationVC?.mentorName = fullName
