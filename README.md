@@ -4,6 +4,6 @@
 
 ### Features
 
-- Displays mentor information with a Table View and Modal
-- Orders mentors based on profile image
-- Scroll to Top button
+- Displays mentor information with a **Table View** and **Modal**
+- **Sorts** mentors based on profile image
+- **Scroll to Top** button
