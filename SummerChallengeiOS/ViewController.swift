@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         // Send HTTP Request
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-
+            
             guard let data = data, error == nil else { return }
 
             // Convert HTTP Response Data to dictionary
